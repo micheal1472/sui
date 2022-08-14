@@ -6,9 +6,11 @@ services:
     ports:
     - "9000:9000"
     - "9184:9184"
+    - "8080:8080"
     expose:
     - "9000"
     - "9184"
+    - "8080"
     volumes:
     - ./fullnode-template.yaml:/sui/fullnode.yaml:ro
     - ./genesis.blob:/sui/genesis.blob:ro
